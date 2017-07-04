@@ -198,3 +198,13 @@ JSON.stringify(myobject);
 
 // "[{"test":"Web"},"Technology","Experts","Notes"]"
 ```
+
+#### #14 How to convert JSON String to Object?
+
+```javascript
+var myJSONData = '[{"test":"Web"},"Technology","Experts","Notes"]';
+JSON.parse(myJSONData);
+
+// output
+[{test:'Web'},'Technology','Experts','Notes']
+```
