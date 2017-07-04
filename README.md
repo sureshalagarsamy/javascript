@@ -105,3 +105,30 @@ function mul (x) {
     };
 }
 ```
+
+
+
+#### #7 How to empty an array in JavaScript
+
+### Method-1
+
+```javascript
+A = [];
+```
+
+This is perfect if you ```don't have references``` to the original array A anywhere else, because this actually creates a brand new (empty) array. Only use this if you only reference the array by its original variable A.
+
+This code sample shows the issue you can encounter when using this method:
+
+```javascript
+var arr1 = ['a','b','c','d','e','f'];
+var arr2 = arr1;  // Reference arr1 by another variable 
+arr1 = [];
+console.log(arr2); // Output ['a','b','c','d','e','f']
+```
+
+### Method-2
+
+```javascript
+A.length = 0;
+```
