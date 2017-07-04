@@ -146,3 +146,23 @@ function second() {
  }; 
 ```
 The main difference is the function ```first``` is defined at run-time whereas function ```second``` is defined at parse time.
+
+
+
+
+#### #9 What will be the output of the code below?
+
+```javascript
+var Employee = {
+  company: 'xyz'
+}
+var emp1 = Object.create(Employee);
+delete emp1.company
+console.log(emp1.company);
+```
+
+The output would be ```xyz```. Here, ```emp1``` object has ```company``` as it is prototype property. The ```delete``` operator doesn’t delete prototype property.
+
+```emp1``` object doesn’t have company as its own property.
+
+ However, we can delete the ```company``` property directly from the ```Employee``` object using ```delete Employee.company```. 
