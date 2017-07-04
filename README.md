@@ -188,3 +188,13 @@ var str='Suresh Alagarsamy';
 str = str.toLowerCase();
 console.log(str);
 ```
+
+
+#### #13 How to convert JSON Object to String?
+
+```javascript
+var myobject=[{test:'Web'},'Technology','Experts','Notes']
+JSON.stringify(myobject);
+
+// "[{"test":"Web"},"Technology","Experts","Notes"]"
+```
