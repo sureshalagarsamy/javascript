@@ -174,3 +174,9 @@ The output would be ```xyz```. Here, ```emp1``` object has ```company``` as it i
 ```this``` keyword is used to point at the current object in the code.
 
 For instance: If the code is presently at an object created by the help of the ‘new’ keyword, then ‘this’ keyword will point to the object being created.
+
+ 
+#### #11 What is the difference between window.onload and onDocumentReady?
+
+The ```window.onload``` event won’t trigger until every single element on the page has been fully loaded, including images and CSS. The downside to this is it might take a while before any code is actually executed. You can use ```onDocumentReady``` to execute code as soon as the DOM is loaded instead.
+
