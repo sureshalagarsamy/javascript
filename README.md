@@ -166,3 +166,11 @@ The output would be ```xyz```. Here, ```emp1``` object has ```company``` as it i
 ```emp1``` object doesn’t have company as its own property.
 
  However, we can delete the ```company``` property directly from the ```Employee``` object using ```delete Employee.company```. 
+
+
+ 
+#### #10 What is ‘this’ keyword in JavaScript?
+
+```this``` keyword is used to point at the current object in the code.
+
+For instance: If the code is presently at an object created by the help of the ‘new’ keyword, then ‘this’ keyword will point to the object being created.
