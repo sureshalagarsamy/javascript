@@ -288,3 +288,35 @@ console.log(encodedURI);
 ```
 
 We see that JavaScript encodes the space between the words in the <uri> variable as <%20>. Thus, the encodeURI function is used to encode special reserved characters and other non-ASCII characters in the URI.
+
+
+#### #19 What Is Scope In JavaScript?
+
+In JavaScript, the scope is of two types.
+
+* Global Scope
+* Local Scope
+
+<b>Global Scope</b>
+
+A variable defined outside a function comes under the Global scope. Variables defined inside the Global scope are accessible from any part of the code.
+
+```javascript
+var name = 'SURESH';
+var myObject = {name:'SURESH',company:'xyz'};
+
+function callMe() {
+	alert(name);			 // Accessible here
+    console.log(myObject);	 // Accessible here
+}
+```
+
+<b>Local Scope</b>
+
+Variables defined inside a function comes under the Local scope.
+
+```javascript
+function callMe() {
+	var name = "SURESH";	// not accessible in other functions
+}
+```
