@@ -180,3 +180,11 @@ For instance: If the code is presently at an object created by the help of the â
 
 The ```window.onload``` event wonâ€™t trigger until every single element on the page has been fully loaded, including images and CSS. The downside to this is it might take a while before any code is actually executed. You can use ```onDocumentReady``` to execute code as soon as the DOM is loaded instead.
 
+
+#### #12 How to convert a string to lowercase?
+
+```javascript
+var str='Suresh Alagarsamy';
+str = str.toLowerCase();
+console.log(str);
+```
