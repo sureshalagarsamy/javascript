@@ -208,3 +208,13 @@ JSON.parse(myJSONData);
 // output
 [{test:'Web'},'Technology','Experts','Notes']
 ```
+
+#### #15 Can i declare a variable as CONSTANT in JavaScript?
+
+ES2015 or ECMAScript 6, the latest version of JavaScript, has a notion of const:
+
+```javascript
+const MY_CONSTANT = "SURESH";
+```
+
+This will work in pretty much all browsers except IE 8, 9 and 10. Some may also need strict mode enabled.
