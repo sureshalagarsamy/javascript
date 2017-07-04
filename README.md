@@ -257,3 +257,16 @@ var MYAPPLICATION = {
 ```
 
 To access any of the methods or variables, you need to fetch it through the MYAPPLICATION. Even we can create nested JavaScript Namespace as well.
+
+
+#### #17 What Is Strict Mode In JavaScript?
+
+ It provides following enhancements.
+ 
+ * To use a variable, it has become mandatory to declare it.
+ * It disallows duplicate property and parameter names.
+ * It deprecates the “with” statement.
+ * JavaScript will throw an error if we try to assign a value to a read-only property.
+ * It decreases the global namespace pollution.
+
+To enable strict mode, we have to add, “use strict” directive to the code. The physical location of the “strict” directive determines its scope. If used at the beginning of the js file, its scope is global. However, if we declare strict mode at the first line in the function block, its scope restricts to that function only.
