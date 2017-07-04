@@ -1,6 +1,6 @@
 # JavaScript interview questions
 
-#### #1 What will the output for the below code and why?
+#### #1 What will the output for the below code?
 
 ```javascript
 (function(){
@@ -27,4 +27,26 @@ As a result (if you are not using strict mode), the output of the code snippet w
 ```javascript
 a defined? false
 b defined? true
+```
+
+#### #2 What will the output for the below code?
+
+```javascript
+console.log(0.1 + 0.2);
+console.log(0.1 + 0.2 == 0.3);
+```
+
+Answer to this question would be ```0.3``` and ```true``` correct? But your answer is wrong. In javscript all numbers will be treated with floating point precision. So may not yield the correct answer for this.
+
+Surprisingly, it will print out:
+
+```javascript
+0.30000000000000004
+false
+```
+
+to get a proper output we may need to do the following work around.
+
+```javascript
+console.log((0.1*10  +  0.2*10)/10);  // output 0.3
 ```
