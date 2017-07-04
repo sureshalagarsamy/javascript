@@ -327,3 +327,17 @@ function callMe() {
 
 Every JavaScript function has a prototype property (by default this property is null), that is mainly used for implementing inheritance. We add methods and properties to a function’s prototype so that it becomes available to that function.
 
+
+```javascript
+function callMe(a,b) {
+	this.x = a;
+	this.y = b;
+}
+
+callMe.prototype.addMe = function() {
+	return 9 + this.x + this.y;
+}
+
+var callMeObj = new callMe(2,3);
+console.log(callMeObj.addMe());
+```
