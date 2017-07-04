@@ -270,3 +270,21 @@ To access any of the methods or variables, you need to fetch it through the MYAP
  * It decreases the global namespace pollution.
 
 To enable strict mode, we have to add, “use strict” directive to the code. The physical location of the “strict” directive determines its scope. If used at the beginning of the js file, its scope is global. However, if we declare strict mode at the first line in the function block, its scope restricts to that function only.
+
+
+#### #18 What Is EncodeURI() Function?
+
+The encodeURI() function is used to encode a URI. This function encodes all special characters, except these < , / ? : @ & = + $ #>.
+
+<i>Let’s See An Example.</i>
+
+```javascript
+var uri="http://www.suresh.com/how to make a website using javaScript";
+var encodedURI = encodeURI(uri);
+console.log(encodedURI);
+
+// Output
+// http://www.suresh.com/how%20to%20make%20a%20website%20using%20javaScript
+```
+
+We see that JavaScript encodes the space between the words in the <uri> variable as <%20>. Thus, the encodeURI function is used to encode special reserved characters and other non-ASCII characters in the URI.
