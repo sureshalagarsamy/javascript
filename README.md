@@ -320,3 +320,10 @@ function callMe() {
 	var name = "SURESH";	// not accessible in other functions
 }
 ```
+
+
+
+#### #20 What Is Prototype Property In JavaScript?
+
+Every JavaScript function has a prototype property (by default this property is null), that is mainly used for implementing inheritance. We add methods and properties to a function’s prototype so that it becomes available to that function.
+
