@@ -70,3 +70,20 @@ console.log( "A" - "B" + 2);		// NaN
 console.log(false == '0')		// true
 console.log(false === '0')		// false
 ```
+
+
+#### #5 Write palindrome programe
+
+```javascript
+function isPalindrome(str) {
+    str = str.replace(/\W/g, '').toLowerCase();
+    return (str == str.split('').reverse().join(''));
+}
+```
+
+```javascript
+isPalindrome('MALAYALAM');	// true
+isPalindrome('Anna');		// true
+isPalindrome('Madam');		// true
+isPalindrome('SURESH');		// false
+```
