@@ -218,3 +218,42 @@ const MY_CONSTANT = "SURESH";
 ```
 
 This will work in pretty much all browsers except IE 8, 9 and 10. Some may also need strict mode enabled.
+
+
+#### #16 What is a Namespace in JavaScript?
+
+Namespace is a container for set of identifiers, functions, methods and all that. It gives a level of direction to its contents so that it will be well distinguished and organized.
+
+To achieve this, what we need to do is to create a namespace in application and use it.
+
+<i>Unfortunately JavaScript doesn’t provide namespace by default. </i>So anything we create in JavaScript is global and we continue polluting that ```global``` namespace by adding more to that. As we know, in JavaScript everything is an object and creating an object is very simple. We can achieve namespace very easily with some minor tweaks.
+
+```javascript
+var myProduct = 'SONY';
+function abc() {
+    // code here
+}
+
+function xyz() {
+	// code here
+}
+```
+
+In the above code two functions ```abc()``` ```xyz()``` and variable ```myProduct``` are fall into global namespace.
+
+
+* JavaScript Sample Namespace
+
+```javascript
+var MYAPPLICATION = {
+	myProduct: 'SONY',
+	abc:function() {
+    	// code here
+    },
+	xyz:function() {
+    	// code here
+    }
+}
+```
+
+To access any of the methods or variables, you need to fetch it through the MYAPPLICATION. Even we can create nested JavaScript Namespace as well.
