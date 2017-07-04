@@ -62,3 +62,11 @@ console.log(+"1" +  "1" + "2");		// 112
 console.log( "A" - "B" + "2");		// NaN2
 console.log( "A" - "B" + 2);		// NaN
 ```
+
+
+#### #4 What will the output for the below code?
+
+```javascript
+console.log(false == '0')		// true
+console.log(false === '0')		// false
+```
