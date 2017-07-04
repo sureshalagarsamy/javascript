@@ -23,7 +23,7 @@ But in fact, ```var a = b = 3;``` is actually shorthand for:
 ```b = 3``` <br>
 ```var a = b```
 
-As a result (if you are not using strict mode), the output of the code snippet would be:
+As a result (if you are not using strict mode), the output of the code snippet would be
 ```javascript
 a defined? false
 b defined? true
