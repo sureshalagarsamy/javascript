@@ -132,3 +132,17 @@ console.log(arr2); // Output ['a','b','c','d','e','f']
 ```javascript
 A.length = 0;
 ```
+
+
+#### #8 What is the difference between the function declarations below?
+
+```javascript
+var first = function() { 
+   // Some code
+}; 
+
+function second() { 
+    // Some code
+ }; 
+```
+The main difference is the function ```first``` is defined at run-time whereas function ```second``` is defined at parse time.
