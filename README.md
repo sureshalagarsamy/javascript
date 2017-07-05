@@ -348,7 +348,9 @@ All JavaScript identifiers are <b>case sensitive</b>.
 
 The variables ```lastName``` and ```lastname```, are two different variables.
 
-Historically, programmers have used different ways of joining multiple words into one variable name. I would suggest the developers to use lower camerl case letters.
+Historically, programmers have used different ways of joining multiple words into one variable name. I would suggest the developers to use ```lower camel case``` letters like below.
+
+``` myName ``` ``` firstName``` ```lastName```
 
 #### upper camel case
 
