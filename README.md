@@ -341,3 +341,15 @@ callMe.prototype.addMe = function() {
 var callMeObj = new callMe(2,3);
 console.log(callMeObj.addMe());
 ```
+
+#### #21 Is JavaScript case sensitive?
+
+All JavaScript identifiers are <b>case sensitive</b>. 
+
+The variables ```lastName``` and ```lastname```, are two different variables.
+
+Historically, programmers have used different ways of joining multiple words into one variable name. I would suggest the developers to use lower camerl case letters.
+
+#### upper camel case
+
+![image](https://user-images.githubusercontent.com/6780840/27864704-47528b42-61ad-11e7-874a-5ca9bce63246.png)
