@@ -355,3 +355,9 @@ Historically, programmers have used different ways of joining multiple words int
 #### upper camel case
 
 ![image](https://user-images.githubusercontent.com/6780840/27864704-47528b42-61ad-11e7-874a-5ca9bce63246.png)
+
+
+#### #22 What is the difference between ViewState and SessionState?
+
+* ```ViewState``` is specific to a page in a session.
+* ```SessionState``` is specific to user specific data that can be accessed across all pages in the web application.
