@@ -361,3 +361,11 @@ Historically, programmers have used different ways of joining multiple words int
 
 * ```ViewState``` is specific to a page in a session.
 * ```SessionState``` is specific to user specific data that can be accessed across all pages in the web application.
+
+#### #23 What are the different types of errors in JavaScript?
+
+There are three types of errors:
+
+* ```Load time errors``` Errors which come up when loading a web page like improper syntax errors are known as Load time errors and it generates the errors dynamically.
+* ```Run time errors``` Errors that come due to misuse of the command inside the HTML language.
+* ```Logical Errors``` These are the errors that occur due to the bad logic performed on a function which is having different operation.
