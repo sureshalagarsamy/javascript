@@ -369,3 +369,20 @@ There are three types of errors:
 * ```Load time errors``` Errors which come up when loading a web page like improper syntax errors are known as Load time errors and it generates the errors dynamically.
 * ```Run time errors``` Errors that come due to misuse of the command inside the HTML language.
 * ```Logical Errors``` These are the errors that occur due to the bad logic performed on a function which is having different operation.
+
+
+#### #24 What is ```undefined``` and ```not defined```?
+
+There are three types of errors:
+
+<b>undefined</b>
+```javascript
+var x; 				// declaring x
+console.log(x); 	// output: undefined 
+```
+
+
+<b>not defined</b>
+```javascript
+console.log(y); 	// output: Uncaught ReferenceError: y is not defined
+```
