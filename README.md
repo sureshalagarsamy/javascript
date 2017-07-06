@@ -61,6 +61,14 @@ console.log(1 +  -"1" + "2");		// 02
 console.log(+"1" +  "1" + "2");		// 112
 console.log( "A" - "B" + "2");		// NaN2
 console.log( "A" - "B" + 2);		// NaN
+console.log('1'+'C')			// "1C"
+console.log('1'*'C')			// NaN
+console.log('1'/'C')			// NaN
+console.log('1'-'C')			// NaN
+console.log('1'+0)			// "10"
+console.log('1'*0)			// 0
+console.log('1'/0)			// Infinity
+console.log('1'-0)			// 1
 ```
 
 
