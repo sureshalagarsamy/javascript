@@ -394,3 +394,48 @@ console.log(x); 	// output: undefined
 ```javascript
 console.log(y); 	// output: Uncaught ReferenceError: y is not defined
 ```
+
+#### #25 How do you check if a variable is an array in JavaScript?
+
+There are many methods:
+
+### method-1
+
+<b>variable.constructor === Array</b>
+
+```javascript
+function checkVariable(param){
+ 	if(param.constructor === Array){ 
+		console.log('Array');
+ 	} else {
+ 	  console.log('Not an array');
+ 	}
+}
+checkVariable({name:'SURESH'});		// Not an array
+```
+
+```javascript
+function checkVariable(param){
+ 	if(param.constructor === Array){ 
+		console.log('Array');
+ 	} else {
+ 	  console.log('Not an array');
+ 	}
+}
+checkVariable(['A']);		// Array
+```
+
+### method-2
+
+<b>Array.isArray(obj) == true</b>
+
+```javascript
+function checkVariable(param){
+ 	if(Array.isArray(param) == true){ 
+		console.log('Array');
+ 	} else {
+ 	  console.log('Not an array');
+ 	}
+}
+checkVariable({name:'SURESH'});		// Not an array
+```
