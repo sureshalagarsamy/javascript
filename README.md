@@ -381,7 +381,6 @@ There are three types of errors:
 
 #### #24 What is ```undefined``` and ```not defined```?
 
-There are three types of errors:
 
 <b>undefined</b>
 ```javascript
