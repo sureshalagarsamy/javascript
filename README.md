@@ -438,3 +438,38 @@ function checkVariable(param){
 }
 checkVariable({name:'SURESH'});		// Not an array
 ```
+
+#### #26 Find duplicate values in a array?
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Find duplicate values in a JavaScript array</title>
+</head>
+	<body>
+		<script>
+		function find_duplicate_in_array(myArray) {
+			var i, result=[], obj={}; 
+			for(i=0; i<myArray.length; i++)
+			{
+				obj[myArray[i]] = 0;	// it will create a 'number' object.
+			}
+			for(i in obj)	// loop for object method
+			{
+				result.push(i);
+			}
+			return result;
+		}
+		var arrayData = [1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6];
+
+		console.log(find_duplicate_in_array(arrayData));
+		</script>
+	</body>
+</html>
+```
+
+### Output
+
+![image](https://user-images.githubusercontent.com/6780840/28199739-a2b4b954-6885-11e7-818f-f19d1852c552.png)
