@@ -454,8 +454,12 @@ checkVariable({name:'SURESH'});		// Not an array
 			var i, result=[], obj={}; 
 			for(i=0; i<myArray.length; i++)
 			{
-				obj[myArray[i]] = 0;	// it will create a 'number' object.
+				obj[myArray[i]] = 0;	
 			}
+            
+            // output for the above for loop is 
+            ////Object {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 71: 0, -2: 0}
+            
 			for(i in obj)	// loop for object method
 			{
 				result.push(i);
@@ -473,3 +477,4 @@ checkVariable({name:'SURESH'});		// Not an array
 ### Output
 
 ![image](https://user-images.githubusercontent.com/6780840/28199739-a2b4b954-6885-11e7-818f-f19d1852c552.png)
+
