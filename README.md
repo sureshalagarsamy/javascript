@@ -411,18 +411,9 @@ function checkVariable(param){
  	}
 }
 checkVariable({name:'SURESH'});		// Not an array
+checkVariable(['A']);			// Array
 ```
 
-```javascript
-function checkVariable(param){
- 	if(param.constructor === Array){ 
-		console.log('Array');
- 	} else {
- 	  console.log('Not an array');
- 	}
-}
-checkVariable(['A']);		// Array
-```
 
 ### method-2
 
