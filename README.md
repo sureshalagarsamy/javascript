@@ -457,8 +457,8 @@ checkVariable({name:'SURESH'});		// Not an array
 				obj[myArray[i]] = 0;	
 			}
             
-            // output for the above for loop is 
-            ////Object {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 71: 0, -2: 0}
+            		// output for the above for loop is 
+            		// Object {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 71: 0, -2: 0}
             
 			for(i in obj)	// loop for object method
 			{
