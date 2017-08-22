@@ -470,3 +470,12 @@ checkVariable({name:'SURESH'});		// Not an array
 
 ![image](https://user-images.githubusercontent.com/6780840/28199739-a2b4b954-6885-11e7-818f-f19d1852c552.png)
 
+
+#### #27 How to compare two objects in javascript?
+
+```javascript
+var obj1={test:"value-1"};
+var obj2={test:"value-2"}; 
+
+JSON.stringify(obj1) === JSON.stringify(obj2);   // false
+```
