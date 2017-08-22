@@ -479,3 +479,22 @@ var obj2={test:"value-2"};
 
 JSON.stringify(obj1) === JSON.stringify(obj2);   // false
 ```
+
+#### #28 Find number of elements in javascript object
+
+To do this in any ES5-compatible environment
+
+```javascript
+Object.keys(obj).length
+```
+
+### Sample
+
+```javascript
+var obj={name:"Suresh", location:"Bengaluru", pincode:560017}
+Object.keys(obj).length;
+
+// 3
+```
+
+Browser support from [here](http://kangax.github.io/compat-table/es5/)
