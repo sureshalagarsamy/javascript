@@ -498,3 +498,45 @@ Object.keys(obj).length;
 ```
 
 Browser support from [here](http://kangax.github.io/compat-table/es5/)
+
+#### #29 HTML data-* Attributes
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function showDetail(department) {
+    var deptType = department.getAttribute("data-dept-type");
+    alert(department.innerHTML + " is into " + deptType + " department.");
+}
+</script>
+</head>
+<body>
+
+<h1>Resources</h1>
+<p>Click on each resources to see what department they are:</p>
+
+<ul>
+  <li onclick="showDetail(this)" id="Civil" data-dept-type="civil">Suresh</li>
+  <li onclick="showDetail(this)" id="Medical" data-dept-type="medical">Ganesh</li> 
+  <li onclick="showDetail(this)" id="Bank" data-dept-type="bank">Vignesh</li>  
+</ul>
+
+</body>
+</html>
+
+```
+
+### HTML output
+
+
+![image](https://user-images.githubusercontent.com/6780840/29965039-bc6251b6-8f29-11e7-824a-1c123f3ff75e.png)
+
+
+### console log
+
+
+![image](https://user-images.githubusercontent.com/6780840/29965090-e2132b38-8f29-11e7-90f8-9ae804911b28.png)
+
+
