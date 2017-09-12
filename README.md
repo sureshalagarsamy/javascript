@@ -541,3 +541,17 @@ function showDetail(department) {
 ![image](https://user-images.githubusercontent.com/6780840/29965090-e2132b38-8f29-11e7-90f8-9ae804911b28.png)
 
 
+#### #30 What is the use of console.time method?
+
+I will show you how to use ```console.time``` as a low-cost performance testing tool.
+
+```javascript
+console.time("SURESH");
+for(var i=0;i<99999999;i++) {
+  
+}
+console.timeEnd("SURESH");
+
+//Output: SURESH: 296.1708984375ms
+```
+
