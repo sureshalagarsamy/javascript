@@ -576,3 +576,9 @@ console.timeEnd("SURESH");
 //Output: SURESH: 296.1708984375ms
 ```
 
+#### #31 is http stateful or stateless protocol?
+
+* HTTP is a stateless protocol. This means a HTTP server needs not keep track of any state information. 
+* At any time, client can send any valid command.
+* A HTTP server wil not remember whether a client has visited it before, or how many time.
+
