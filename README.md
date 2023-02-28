@@ -431,47 +431,7 @@ function checkVariable(param){
 checkVariable({name:'SURESH'});		// Not an array
 ```
 
-#### #26 Find duplicate values in a array?
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Find duplicate values in a JavaScript array</title>
-</head>
-	<body>
-		<script>
-		function find_duplicate_in_array(myArray) {
-			var i, result=[], obj={}; 
-			for(i=0; i<myArray.length; i++)
-			{
-				obj[myArray[i]] = 0;	
-			}
-            
-            		// output for the above for loop is 
-            		// Object {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 71: 0, -2: 0}
-            
-			for(i in obj)	// loop for object method
-			{
-				result.push(i);
-			}
-			return result;
-		}
-		var arrayData = [1, 2, -2, 4, 5, 4, 7, 8, 7, 7, 71, 3, 6];
-
-		console.log(find_duplicate_in_array(arrayData));
-		</script>
-	</body>
-</html>
-```
-
-### Output
-
-![image](https://user-images.githubusercontent.com/6780840/28199739-a2b4b954-6885-11e7-818f-f19d1852c552.png)
-
-
-#### #27 How to compare two objects in javascript?
+#### #26 How to compare two objects in javascript?
 
 ```javascript
 var obj1={test:"value-1"};
@@ -480,7 +440,7 @@ var obj2={test:"value-2"};
 JSON.stringify(obj1) === JSON.stringify(obj2);   // false
 ```
 
-#### #28 Find number of elements in javascript object
+#### #27 Find number of elements in javascript object
 
 To do this in any ES5-compatible environment
 
@@ -499,7 +459,7 @@ Object.keys(obj).length;
 
 Browser support from [here](http://kangax.github.io/compat-table/es5/)
 
-#### #29 HTML data-* Attributes
+#### #28 HTML data-* Attributes
 
 ```html
 <!DOCTYPE html>
@@ -540,7 +500,7 @@ function showDetail(department) {
 ![image](https://user-images.githubusercontent.com/6780840/29965090-e2132b38-8f29-11e7-90f8-9ae804911b28.png)
 
 
-#### #30 What is the use of console.time method?
+#### #29 What is the use of console.time method?
 
 I will show you how to use ```console.time``` as a low-cost performance testing tool.
 
@@ -554,13 +514,13 @@ console.timeEnd("SURESH");
 //Output: SURESH: 296.1708984375ms
 ```
 
-#### #31 is http stateful or stateless protocol?
+#### #30 is http stateful or stateless protocol?
 
 * HTTP is a stateless protocol. This means a HTTP server needs not keep track of any state information. 
 * At any time, client can send any valid command.
 * A HTTP server wil not remember whether a client has visited it before, or how many time.
 
-#### #32 what is callback function?
+#### #31 what is callback function?
 			    
 A `callback` function is a function that is passed to another function as an argument and is executed after some operation has been completed. 
 
