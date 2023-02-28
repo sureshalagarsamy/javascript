@@ -1,4 +1,4 @@
-# JavaScript interview questions
+# JavaScript notes
 
 #### #1 What will the output for the below code?
 
