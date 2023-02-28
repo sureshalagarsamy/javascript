@@ -98,28 +98,6 @@ isPalindrome('Madam');		// true
 isPalindrome('SURESH');		// false
 ```
 
-##### palindrome number
-
-```js
-function palindrome(param) {
-		var a, no, b, temp = 0;
-		no = Number( param );
-		b = no;
-		while ( no > 0 ) {
-			a = no % 10;
-			no = parseInt( no / 10 );
-			temp = temp * 10 + a;
-		}
-		if ( temp == b ) {
-			console.log( "Palindrome number" );
-		}
-		else {
-			console.log( "Not Palindrome number" );
-		}
-	}
-palindrome(99)
-```
-
 #### #6 Write a mul function which will produce the following outputs when invoked:
 
 ```javascript
