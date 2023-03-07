@@ -534,3 +534,16 @@ modifyArray(arr, function() {
     console.log("array has been modified", arr);  // "array has been modified" // [1, 2, 100]
 });
 ```
+
+#### Write conditional judgement statements in short
+If the function is executed only when the condition is true, you can use the && shorthand.
+
+```js
+// Common writing method
+if (condition) {
+    doSomething();
+}
+
+// Abbreviations
+condition && doSomething();  			    
+```
